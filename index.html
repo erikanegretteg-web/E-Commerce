@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce en Salud | Modernización y Análisis</title>
+  <meta name="description"
+    content="Exploramos el impacto del comercio electrónico en la salud, desde el vaper hasta la influencia de las redes sociales.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/erika_icon_e.png">
+</head>
+
+<body>
+  <div class="bg-decoration"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+      </ul>
+      <div class="search-box">
+        <input type="text" placeholder="Buscar artículo..." id="mainSearch">
+        <button title="Buscar">🔍</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-main">
+        <h1 class="blog-title"><a href="#">E-Commerce en Salud</a></h1>
+        <p class="blog-description">Analizando las nuevas fronteras del comercio digital y su impacto en nuestro
+          bienestar
+          físico y mental.</p>
+      </div>
+      <div class="header-profile">
+        <div class="profile-card-mini">
+          <div class="profile-avatar">
+            <img src="./images/erika_icon_e.png" alt="Erika N.">
+            <span class="status-indicator"></span>
+          </div>
+          <div class="profile-details">
+            <span class="profile-label">Estudiante </span>
+            <h4 class="profile-name">Erika Negrette.</h4>
+            <p class="profile-tagline">Gerencia en Salud</p>
+            <div class="profile-social-mini">
+              <a href="#" onclick="share('whatsapp')" title="WhatsApp"><svg viewBox="0 0 24 24" width="14" height="14"
+                  fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.895-5.335 11.898-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg></a>
+              <a href="#" onclick="share('facebook')" title="Facebook"><svg viewBox="0 0 24 24" width="14" height="14"
+                  fill="currentColor">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="site-content">
+    <div class="main-column">
+
+      <!-- POST 1: VAPERS -->
+      <article class="post-card" id="post1">
+        <div class="post-image-wrap">
+          <img src="./images/vapers-influence.png" alt="Vaping and Social Influence">
+        </div>
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-date">📅 27 de Abril, 2026</span>
+            <span class="post-label">Influencia social</span>
+            <span class="post-label">Salud Digital</span>
+            <span class="post-label">Vapers</span>
+          </div>
+          <h2 class="post-title-link" onclick="openModal('modal1')">¿Moda Inofensiva o Riesgo de Salud?</h2>
+          <p class="post-excerpt">El auge de los vapers en el comercio electrónico no es casualidad. Analizamos cómo el
+            marketing digital está transformando un hábito de riesgo en una tendencia aspiracional para los jóvenes...
+          </p>
+          <button class="read-more" onclick="openModal('modal1')">Leer artículo completo →</button>
+        </div>
+        <div class="post-footer-bar">
+          <span class="comments-count">💬 0 Comentarios</span>
+          <div class="card-share">
+            <span class="share-btn-mini" onclick="share('whatsapp')" title="WhatsApp"><svg viewBox="0 0 24 24"
+                width="16" height="16" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.895-5.335 11.898-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg></span>
+            <span class="share-btn-mini" onclick="share('facebook')" title="Facebook"><svg viewBox="0 0 24 24"
+                width="16" height="16" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg></span>
+            <span class="share-trigger" onclick="share('copy')" title="Copiar enlace">🔗</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- POST: COMENTARIOS -->
+      <article class="post-card" id="post-comentarios">
+        <div class="post-image-wrap">
+          <img src="./images/health-reviews.png" alt="Decision de compra y comentarios">
+        </div>
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-date">📅 28 de Abril, 2026</span>
+            <span class="post-label">Consumidor</span>
+          </div>
+          <h2 class="post-title-link" onclick="openModal('modal-comentarios')">El 90% de tu decisión de compra está en
+            los comentarios: ¿Cómo elegir bien en salud?</h2>
+          <p class="post-excerpt">Estudios recientes revelan que la reputación online influye más que las
+            certificaciones sanitarias al comprar salud. ¿Cómo no dejarse llevar solo por las estrellas?</p>
+          <button class="read-more" onclick="openModal('modal-comentarios')">Leer artículo completo →</button>
+        </div>
+        <div class="post-footer-bar">
+          <span class="comments-count">💬 0 Comentarios</span>
+          <div class="card-share">
+            <span class="share-btn-mini" onclick="share('whatsapp')" title="WhatsApp"><svg viewBox="0 0 24 24"
+                width="16" height="16" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.895-5.335 11.898-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg></span>
+            <span class="share-btn-mini" onclick="share('facebook')" title="Facebook"><svg viewBox="0 0 24 24"
+                width="16" height="16" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg></span>
+            <span class="share-trigger" onclick="share('copy')" title="Copiar enlace">🔗</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- POST: SMARTWATCH -->
+      <article class="post-card" id="post-smartwatch">
+        <div class="post-image-wrap">
+          <img src="./images/smartwatch-health.png" alt="Smartwatch and Big Data">
+        </div>
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-date">📅 28 de Abril, 2026</span>
+            <span class="post-label">eSalud</span>
+          </div>
+          <h2 class="post-title-link" onclick="openModal('modal-smartwatch')">💜 ¿Qué hace tu Smartwatch con tus datos
+            médicos?</h2>
+          <p class="post-excerpt">Tu reloj inteligente está creando un perfil completo sobre tu vida. Descubre cómo el
+            Big Data está transformando la medicina personalizada y qué riesgos implica.</p>
+          <button class="read-more" onclick="openModal('modal-smartwatch')">Ver investigación →</button>
+        </div>
+        <div class="post-footer-bar">
+          <span class="comments-count">💬 0 Comentarios</span>
+          <div class="card-share">
+            <span class="share-btn-mini" onclick="share('whatsapp')" title="WhatsApp"><svg viewBox="0 0 24 24"
+                width="16" height="16" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.895-5.335 11.898-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg></span>
+            <span class="share-btn-mini" onclick="share('facebook')" title="Facebook"><svg viewBox="0 0 24 24"
+                width="16" height="16" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg></span>
+            <span class="share-trigger" onclick="share('copy')" title="Copiar enlace">🔗</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- POST: ETICA -->
+      <article class="post-card" id="post-etica">
+        <div class="post-image-wrap">
+          <img src="./images/ethics-ecommerce.png" alt="Etica en E-commerce de Salud">
+        </div>
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-date">📅 28 de Abril, 2026</span>
+            <span class="post-label">Ética Digital</span>
+          </div>
+          <h2 class="post-title-link" onclick="openModal('modal-etica')">💜 El lado oculto del E-Commerce: Vender salud
+            no es como vender ropa</h2>
+          <p class="post-excerpt">La comercialización de productos de salud online tiene dilemas éticos profundos. No
+            todo lo que brilla en el carrito es oro (o medicina real).</p>
+          <button class="read-more" onclick="openModal('modal-etica')">Explorar dilemas →</button>
+        </div>
+        <div class="post-footer-bar">
+          <span class="comments-count">💬 0 Comentarios</span>
+          <div class="card-share">
+            <span class="share-btn-mini" onclick="share('whatsapp')" title="WhatsApp"><svg viewBox="0 0 24 24"
+                width="16" height="16" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.895-5.335 11.898-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg></span>
+            <span class="share-btn-mini" onclick="share('facebook')" title="Facebook"><svg viewBox="0 0 24 24"
+                width="16" height="16" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg></span>
+            <span class="share-trigger" onclick="share('copy')" title="Copiar enlace">🔗</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- POST: E COMMERCE AND HEALTH (April 21) -->
+      <article class="post-card" id="post-ecommerce">
+        <div class="post-image-wrap">
+          <img src="./images/ecommerce-health.png" alt="E Commerce and Health">
+        </div>
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-date">📅 21 de Abril, 2026</span>
+            <span class="post-label">e comerce</span>
+          </div>
+          <h2 class="post-title-link" onclick="openModal('modal-ecommerce')">E Commerce and Health</h2>
+          <p class="post-excerpt">¿Qué es el E-commerce? 🛒💻 Cuando escuchamos la palabra "E-commerce" o comercio
+            electrónico, lo primero que se nos viene a la mente es pedir un domicilio por Rappi, comprar unos zapatos en
+            Shein...</p>
+          <button class="read-more" onclick="openModal('modal-ecommerce')">Leer artículo completo →</button>
+        </div>
+        <div class="post-footer-bar">
+          <span class="comments-count">💬 0 Comentarios</span>
+          <div class="card-share">
+            <span class="share-btn-mini" onclick="share('whatsapp')" title="WhatsApp"><svg viewBox="0 0 24 24"
+                width="16" height="16" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.895-5.335 11.898-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg></span>
+            <span class="share-btn-mini" onclick="share('facebook')" title="Facebook"><svg viewBox="0 0 24 24"
+                width="16" height="16" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg></span>
+            <span class="share-trigger" onclick="share('copy')" title="Copiar enlace">🔗</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- POST: QUIZ INTRO (April 26) -->
+      <article class="post-card" id="post-quiz-intro">
+        <div class="post-image-wrap">
+          <img src="./images/quiz-card.png" alt="Quiz de Influencia">
+        </div>
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-date">📅 26 de Abril, 2026</span>
+            <span class="post-label">e comerce</span>
+            <span class="post-label">Influencia social</span>
+          </div>
+          <h2 class="post-title-link" onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})">
+            Ahora que viste las ramas del comercio, ¿te atreves a descubrir qué tan influenciable eres?</h2>
+          <p class="post-excerpt">Responde las preguntas y descúbrelo. ¡Comenta qué te salió! 🧠📱</p>
+          <button class="read-more"
+            onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})">Realizar el Quiz →</button>
+        </div>
+        <div class="post-footer-bar">
+          <span class="comments-count">💬 0 Comentarios</span>
+          <div class="card-share">
+            <span class="share-btn-mini" onclick="share('whatsapp')" title="WhatsApp"><svg viewBox="0 0 24 24"
+                width="16" height="16" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.895-5.335 11.898-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg></span>
+            <span class="share-btn-mini" onclick="share('facebook')" title="Facebook"><svg viewBox="0 0 24 24"
+                width="16" height="16" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg></span>
+            <span class="share-trigger" onclick="share('copy')" title="Copiar enlace">🔗</span>
+          </div>
+        </div>
+      </article>
+
+
+
+      <!-- POST 3: TIPOS DE COMERCIO -->
+      <article class="post-card" id="post3">
+        <div class="post-image-wrap">
+          <img src="./images/ecommerce-types.png" alt="Tipos de Comercio">
+        </div>
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-date">📅 23 de Abril, 2026</span>
+            <span class="post-label">e comerce</span>
+          </div>
+          <h2 class="post-title-link" onclick="openModal('modal3')">El comercio electrónico tiene muchas formas</h2>
+          <p class="post-excerpt">Desde B2B hasta C2C, el comercio electrónico en salud tiene estructuras complejas que
+            definen cómo accedemos a servicios y productos médicos hoy en día...</p>
+          <button class="read-more" onclick="openModal('modal3')">Explorar ramas →</button>
+        </div>
+      </article>
+
+      <!-- REVIEWS SECTION -->
+      <section class="reviews-section" id="resenas">
+        <h2>Reseñas y Comentarios</h2>
+        <form class="review-form" onsubmit="submitReview(event)">
+          <div class="form-row">
+            <div>
+              <label for="revName">Tu nombre</label>
+              <input type="text" id="revName" placeholder="Escribe tu nombre..." required>
+            </div>
+            <div>
+              <label for="revArticle">Artículo</label>
+              <select id="revArticle">
+                <option>¿Moda Inofensiva o Riesgo de Salud?</option>
+                <option>El 90% de tu decisión está en los comentarios</option>
+                <option>¿Qué hace tu Smartwatch con tus datos?</option>
+                <option>El lado oculto del E-Commerce</option>
+                <option>El comercio electrónico tiene muchas formas</option>
+                <option>E Commerce and Health</option>
+                <option>¿Qué tan influenciable eres?</option>
+              </select>
+            </div>
+          </div>
+          <label>Calificación</label>
+          <div class="star-rating">
+            <span class="star" onclick="setRating(1)">★</span>
+            <span class="star" onclick="setRating(2)">★</span>
+            <span class="star" onclick="setRating(3)">★</span>
+            <span class="star" onclick="setRating(4)">★</span>
+            <span class="star" onclick="setRating(5)">★</span>
+          </div>
+          <label for="revText">Tu comentario</label>
+          <textarea id="revText" placeholder="Comparte tu opinión sobre el artículo..." required></textarea>
+          <button type="submit" class="review-submit">Publicar reseña</button>
+        </form>
+        <div class="reviews-list" id="reviewsList">
+          <!-- Reviews go here -->
+        </div>
+      </section>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-widget">
+        <h2>Sobre el Proyecto</h2>
+        <div class="about-author">
+          <div class="profile-avatar">
+            <img src="./images/erika_icon_e.png" alt="Erika N.">
+          </div>
+          <h3 class="author-name">Erika Negrette</h3>
+          <p class="author-bio">Un análisis académico sobre la
+            intersección entre la salud pública y el mercado digital global.</p>
+          <a href="#" class="author-link">Ver perfil completo →</a>
+        </div>
+      </div>
+
+      <div class="sidebar-widget">
+        <h2>Impacto de la Página</h2>
+        <div class="counter-box">
+          <div class="counter-item">
+            <div class="counter-header">
+              <span class="counter-label">Visitas Totales</span>
+              <img src="./images/verified.png" alt="Verificado" class="verified-badge" title="Conteo real verificado en tiempo real">
+            </div>
+            <div class="counter-main">
+              <span class="counter-value" id="totalVisits">12,483</span>
+              <span class="counter-trend">↑ 12%</span>
+            </div>
+          </div>
+          <div class="counter-item mt-sm">
+            <span class="counter-label">Lectores Activos</span>
+            <div class="active-readers-wrap">
+              <span class="pulse-dot"></span>
+              <span class="counter-value" id="activeReaders">1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-widget">
+        <h2>Comentarios Recientes</h2>
+        <div id="sidebarRecentReviews">
+          <!-- Dynamically filled -->
+        </div>
+      </div>
+
+      <div class="sidebar-widget">
+        <h2>Recursos Clave</h2>
+        <ul class="archive-list">
+          <li class="archive-item"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7433132/" target="_blank"
+              rel="noopener">Ética en E-health (PMC)</a> <span>Web</span></li>
+          <li class="archive-item"><a
+              href="https://www.researchgate.net/publication/344875850_Exploring_healthcarehealth-product_ecommerce_satisfaction_A_text_mining_and_machine_learning_application"
+              target="_blank" rel="noopener">Minería de Datos en Salud</a> <span>Web</span></li>
+          <li class="archive-item"><a href="https://academic.oup.com/book/57952" target="_blank"
+              rel="noopener">Transformación Digital</a> <span>Web</span></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h2>Etiquetas</h2>
+        <div class="label-list">
+          <a href="#" class="label-tag">e comerce <span class="label-count">3</span></a>
+          <a href="#" class="label-tag">Influencia social <span class="label-count">2</span></a>
+          <a href="#" class="label-tag">Salud Digital <span class="label-count">1</span></a>
+          <a href="#" class="label-tag">Vapers <span class="label-count">1</span></a>
+        </div>
+      </div>
+
+      <div class="sidebar-widget">
+        <h2>Apoya nuestro Contenido</h2>
+        <div class="revenue-box">
+          <p>Este blog se mantiene gracias a lectores como tú.</p>
+          <div class="revenue-stats">
+            <div class="rev-stat">
+              <span class="rev-label">Ingresos Mensuales</span>
+              <span class="rev-value">$12.50</span>
+            </div>
+            <div class="rev-stat">
+              <span class="rev-label">Meta del Mes</span>
+              <div class="progress-meta">
+                <div class="progress-bar-meta" id="revenueProgress"></div>
+              </div>
+            </div>
+          </div>
+          <button class="support-btn">Donar un Café ☕</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- POST 2: QUIZ (Moved to end of content) -->
+  <section class="bottom-quiz-section">
+    <div class="container">
+      <article class="post-card featured-quiz" id="quiz">
+        <div class="post-image-wrap">
+          <img src="./images/quiz-influence.png" alt="Quiz de Influencia">
+        </div>
+        <div class="post-content post-content-quiz">
+          <div class="post-meta">
+            <span class="post-label post-label-featured">Interactividad</span>
+          </div>
+          <h2 class="post-title-link">¿Qué tan influenciable eres?</h2>
+          <p class="post-excerpt">Descubre si tus decisiones de compra en salud están guiadas por la ciencia o por el
+            algoritmo de las redes sociales. ¡Realiza nuestro test interactivo!</p>
+
+          <div class="quiz-container">
+            <div class="quiz-header">
+              <h2>Evaluación de Influencia Digital</h2>
+              <p>Responde honestamente para obtener un perfil preciso de tu comportamiento como consumidor.</p>
+              <div class="quiz-progress">
+                <div class="quiz-progress-bar" id="quizProgress"></div>
+              </div>
+            </div>
+            <div class="quiz-body" id="quizBody">
+              <!-- Dynamically filled by JS -->
+            </div>
+            <div class="quiz-result" id="quizResult">
+              <!-- Result goes here -->
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <strong>E-Commerce en Salud</strong> &copy; 2026. Todos los derechos reservados.
+      </div>
+      <div class="footer-right">
+        Diseñado para fines académicos y de concientización social. 
+        <a href="javascript:void(0)" onclick="openModal('modal-aviso-legal')">Aviso Legal</a> | 
+        <a href="javascript:void(0)" onclick="openModal('modal-privacidad')">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" title="Subir">↑</button>
+
+  <!-- MODALS -->
+  <div class="modal-overlay" id="modal1">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>¿Moda Inofensiva o Riesgo de Salud?</h2>
+        <button class="modal-close" onclick="closeModal('modal1')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/vapers-influence.png" class="modal-img" alt="Vapers and influence">
+
+        <h3>El Fenómeno del Vaping</h3>
+        <p>El uso de cigarrillos electrónicos ha crecido exponencialmente en la última década. Lo que comenzó como una
+          herramienta para dejar de fumar se ha transformado, gracias al <strong>comercio electrónico</strong>, en un
+          accesorio de moda global.</p>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-num">35%</span>
+            <span class="stat-label">Crecimiento Anual</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">+8k</span>
+            <span class="stat-label">Sabores Disponibles</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">62%</span>
+            <span class="stat-label">Ventas vía Online</span>
+          </div>
+        </div>
+
+        <h3>📊 El papel del E-Commerce</h3>
+        <p>Las plataformas de comercio electrónico han facilitado enormemente el acceso a estos productos. Mediante
+          estrategias como:</p>
+        <ol>
+          <li><strong>Publicidad en redes sociales</strong> — Influencers promocionan sabores atractivos para jóvenes.
+          </li>
+          <li><strong>Verificación de edad deficiente</strong> — Muchas tiendas online no tienen controles rigurosos.
+          </li>
+          <li><strong>Marketing emocional</strong> — Asociación con libertad, modernidad y estatus.</li>
+        </ol>
+
+        <h4>Impacto en la Salud Mental</h4>
+        <p>Estudios sugieren que el uso constante genera una dependencia no solo física (nicotina) sino también
+          psicológica ligada a la validación social en entornos digitales.</p>
+
+        <div class="share-bar">
+          <button class="share-btn" onclick="share('whatsapp')" title="Compartir en WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.895-5.335 11.898-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('facebook')" title="Compartir en Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('twitter')" title="Compartir en Twitter">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('copy')" title="Copiar enlace">🔗</button>
+        </div>
+
+        <h3>🤔 Reflexión Final</h3>
+        <div class="highlight-box">¿Crees que el e-commerce debería tener regulaciones más estrictas para productos de
+          salud? ¡Déjanos tu opinión abajo!</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal3">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>Tipos de Comercio Digital en Salud</h2>
+        <button class="modal-close" onclick="closeModal('modal3')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/ethics-ecommerce.png" class="modal-img" alt="Tipos de Comercio">
+        <h3>Estructuras del Mercado Digital</h3>
+        <p>El comercio electrónico no es una entidad única, sino un ecosistema diverso:</p>
+        <ul>
+          <li><strong>B2B (Business to Business):</strong> Venta de equipos médicos entre laboratorios y hospitales.
+          </li>
+          <li><strong>B2C (Business to Consumer):</strong> Farmacias online vendiendo directamente al paciente.</li>
+          <li><strong>C2C (Consumer to Consumer):</strong> Plataformas donde usuarios intercambian insumos (con riesgos
+            legales y de salud).</li>
+          <li><strong>G2C (Government to Consumer):</strong> Portales gubernamentales para trámites de salud pública.
+          </li>
+        </ul>
+        <div class="highlight-box">La digitalización de la salud permite una respuesta más rápida, pero exige una
+          ciberseguridad inquebrantable.</div>
+
+        <div class="share-bar">
+          <button class="share-btn" onclick="share('whatsapp')" title="Compartir en WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.895-5.335 11.898-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('facebook')" title="Compartir en Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('twitter')" title="Compartir en Twitter">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('copy')" title="Copiar enlace">🔗</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-comentarios">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>La Influencia de las Reseñas en Salud</h2>
+        <button class="modal-close" onclick="closeModal('modal-comentarios')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/health-reviews.png" class="modal-img" alt="Health reviews">
+        <p>¿Qué es lo primero que miras cuando vas a comprar vitaminas por internet? Si respondiste "los comentarios",
+          estás en la mayoría.</p>
+        <p>Estudios recientes de minería de datos, que analizaron mediante <strong>Inteligencia Artificial (Machine
+            Learning)</strong> miles de reseñas de usuarios en farmacias en línea, revelaron un dato sorprendente: a la
+          hora de comprar productos de salud, la gente suele guiarse más por la reputación del vendedor en internet que
+          por verificar las verdaderas certificaciones sanitarias del producto.</p>
+        <div class="highlight-box">
+          Los investigadores también notaron que la "conveniencia" y la "facilidad de acceso a un clic" hacen que los
+          usuarios ignoren sus preocupaciones de seguridad iniciales al adquirir tratamientos médicos online.
+        </div>
+        <h3>¿Qué significa esto para ti?</h3>
+        <p>Que es muy fácil dejarse llevar por las estrellas. En nuestra tienda, no solo te damos un servicio de
+          logística rápido y una excelente atención al cliente, sino que te garantizamos la autenticidad de cada
+          producto.</p>
+        <p>Tu salud vale más que 5 estrellas, ¡compra siempre con respaldo!</p>
+        <div class="share-bar">
+          <button class="share-btn" onclick="share('whatsapp')" title="Compartir en WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.895-5.335 11.898-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('facebook')" title="Compartir en Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('twitter')" title="Compartir en Twitter">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('copy')" title="Copiar enlace">🔗</button>
+        </div>
+        <hr>
+        <p class="source-text">Fuente: <a
+            href="https://www.researchgate.net/publication/344875850_Exploring_healthcarehealth-product_ecommerce_satisfaction_A_text_mining_and_machine_learning_application"
+            target="_blank" rel="noopener noreferrer">ResearchGate - Exploring healthcare health-product ecommerce
+            satisfaction</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-smartwatch">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>Big Data y Wearables en Salud</h2>
+        <button class="modal-close" onclick="closeModal('modal-smartwatch')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/smartwatch-health.png" class="modal-img" alt="Smartwatch data">
+        <p>Tu reloj inteligente no solo da la hora; está creando un perfil completo sobre tu vida. Las investigaciones
+          actuales sobre la transformación digital en salud (eSalud) nos muestran que el Internet de las Cosas y los
+          dispositivos wearables generan hoy una cantidad enorme de datos constantes sobre cada usuario.</p>
+        <p>El sector salud ya no puede trabajar desconectado del mundo online. Organizaciones a nivel mundial están
+          utilizando estas montañas de información (Big Data) e Inteligencia Artificial para desarrollar desde Chatbots
+          médicos hasta diagnósticos súper precisos.</p>
+        <div class="highlight-box">
+          Pero ojo, esta "revolución tecnológica" requiere una responsabilidad enorme. Los expertos advierten que la
+          seguridad de la información en la nube debe ser la máxima prioridad para garantizar una transformación
+          confiable.
+        </div>
+        <h3>¿Nuestro consejo?</h3>
+        <ul>
+          <li>Usa la tecnología para conocer tu cuerpo.</li>
+          <li>Invierte en productos preventivos.</li>
+          <li>Asegúrate de que las plataformas donde ingreses tus datos médicos sean 100% seguras.</li>
+        </ul>
+        <p><strong>El Futuro en tus manos</strong></p>
+        <div class="share-bar">
+          <button class="share-btn" onclick="share('whatsapp')" title="Compartir en WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.895-5.335 11.898-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('facebook')" title="Compartir en Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('twitter')" title="Compartir en Twitter">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('copy')" title="Copiar enlace">🔗</button>
+        </div>
+        <hr>
+        <p style="font-size: 0.8rem; color: var(--text-muted);">Fuente: <a href="https://academic.oup.com/book/57952"
+            target="_blank" rel="noopener noreferrer">Oxford Academic - Digital Health Transformation</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-etica">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>Ética en el E-Commerce de Salud</h2>
+        <button class="modal-close" onclick="closeModal('modal-etica')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/ethics-ecommerce.png" class="modal-img" alt="Ethics in health commerce">
+        <p>Comprar por internet nos salvó durante la pandemia, acelerando la digitalización de la sociedad. Pero, ¿qué
+          pasa cuando lo que añades al carrito afecta directamente a tu cuerpo?</p>
+        <p>Investigadores de la Revista Journal of Consumer Marketing advierten sobre los grandes dilemas éticos de esta
+          nueva "fiebre" digital, señalando que la comercialización de productos de salud online tiene dinámicas mucho
+          más delicadas que vender ropa o tecnología.</p>
+        <div class="highlight-box">
+          Un estudio empírico en Europa que evaluó a 300 comerciantes de e-commerce demostró que una gran cantidad de
+          vendedores en línea incumplen sus obligaciones legales de protección al consumidor.
+        </div>
+        <h3>Nuestro compromiso ético:</h3>
+        <ul>
+          <li>Operamos bajo normativas estrictas.</li>
+          <li>No vendemos "milagros" sin evidencia.</li>
+          <li>Te educamos para que seas un consumidor digital inteligente.</li>
+        </ul>
+        <p><strong>El paciente empoderado</strong></p>
+        <div class="share-bar">
+          <button class="share-btn" onclick="share('whatsapp')" title="Compartir en WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.895-5.335 11.898-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('facebook')" title="Compartir en Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('twitter')" title="Compartir en Twitter">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </button>
+          <button class="share-btn" onclick="share('copy')" title="Copiar enlace">🔗</button>
+        </div>
+        <hr>
+        <p style="font-size: 0.8rem; color: var(--text-muted);">Fuente: <a
+            href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7433132/" target="_blank" rel="noopener noreferrer">PMC -
+            Ethics in Healthcare E-commerce</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-ecommerce">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>E Commerce and Health</h2>
+        <button class="modal-close" onclick="closeModal('modal-ecommerce')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/smartwatch-health.png" class="modal-img" alt="E Commerce and Health">
+
+        <h3>¿Qué es el E-commerce? 🛒💻</h3>
+        <p>Cuando escuchamos la palabra "E-commerce" o comercio electrónico, lo primero que se nos viene a la mente es
+          pedir un domicilio por Rappi, comprar unos zapatos en Shein.</p>
+        <p>El E-commerce dejó de ser una "alternativa moderna" para convertirse en la <strong>columna vertebral de los
+            negocios</strong>. Transformó la logística, los métodos de pago (ahora todo es digital, QR, transferencias)
+          y la forma en que los clientes exigen rapidez.</p>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-num">$6.3T</span>
+            <span class="stat-label">Ventas globales 2024</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2.71B</span>
+            <span class="stat-label">Compradores online</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">21%</span>
+            <span class="stat-label">Ventas retail son online</span>
+          </div>
+        </div>
+
+        <h3>📊 ¿Cómo funciona?</h3>
+        <p>El comercio electrónico conecta vendedores y compradores a través de plataformas digitales. Existen múltiples
+          modelos:</p>
+        <ul>
+          <li><strong>B2C (Business to Consumer):</strong> Tiendas como Amazon, MercadoLibre vendiendo directamente al
+            consumidor.</li>
+          <li><strong>B2B (Business to Business):</strong> Empresas vendiendo a otras empresas (equipos médicos,
+            insumos).</li>
+          <li><strong>C2C (Consumer to Consumer):</strong> Plataformas como eBay donde usuarios venden entre sí.</li>
+          <li><strong>M-Commerce:</strong> Comercio a través de dispositivos móviles.</li>
+        </ul>
+
+        <h3>🏥 E-Commerce y Salud</h3>
+        <p>En el sector salud, el e-commerce ha revolucionado el acceso a medicamentos, dispositivos médicos y consultas
+          en línea. Farmacias digitales, plataformas de telemedicina y marketplaces de bienestar son ahora parte
+          cotidiana de nuestra vida.</p>
+
+        <div class="highlight-box">¿Quieres saber más sobre el e-commerce? ¡Explora nuestros otros artículos sobre las
+          implicaciones éticas y el uso de Big Data!</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEGAL & PRIVACY MODALS -->
+  <div class="modal-overlay" id="modal-aviso-legal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>Aviso Legal</h2>
+        <button class="modal-close" onclick="closeModal('modal-aviso-legal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h3>Información General</h3>
+        <p>Este blog, <strong>E-Commerce en Salud</strong>, es un proyecto de carácter académico y divulgativo gestionado por <strong>Erika Negrette</strong>, estudiante de Gerencia en Salud. El objetivo primordial es analizar el impacto del comercio electrónico en el bienestar físico y mental de la sociedad actual.</p>
+        
+        <h3>Exención de Responsabilidad Médica</h3>
+        <div class="highlight-box">
+          <strong>IMPORTANTE:</strong> La información contenida en este sitio web tiene fines exclusivamente informativos y educativos. No constituye, bajo ninguna circunstancia, consejo médico profesional, diagnóstico o tratamiento.
+        </div>
+        <p>Siempre busque el consejo de su médico u otro proveedor de salud calificado para cualquier pregunta que pueda tener con respecto a una condición médica. Nunca ignore el consejo médico profesional ni retrase su búsqueda debido a algo que haya leído en este blog.</p>
+        
+        <h3>Propiedad Intelectual</h3>
+        <p>Los contenidos propios publicados en este sitio están protegidos por derechos de autor. Las imágenes y referencias de terceros se utilizan bajo principios de uso justo para fines académicos, citando siempre que sea posible la fuente original.</p>
+        
+        <h3>Enlaces Externos</h3>
+        <p>Este sitio contiene enlaces a sitios web de terceros. Erika Negrette no se hace responsable del contenido, las políticas de privacidad o las prácticas de dichos sitios externos.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-privacidad">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>Política de Privacidad</h2>
+        <button class="modal-close" onclick="closeModal('modal-privacidad')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h3>Compromiso de Privacidad</h3>
+        <p>Respetamos su privacidad y nos comprometemos a ser transparentes sobre cualquier dato que podamos recibir a través de este blog.</p>
+        
+        <h3>Recopilación de Datos</h3>
+        <p>Para la navegación general por este sitio, <strong>no se requiere ni se solicita</strong> información personal identificable (nombre, dirección, correo electrónico, etc.).</p>
+        
+        <h4>1. Comentarios y Reseñas</h4>
+        <p>Si decide publicar una reseña o comentario en las secciones habilitadas, el nombre que proporcione y su comentario serán visibles públicamente en el sitio. Le recomendamos no compartir información personal sensible en estos espacios.</p>
+        
+        <h4>2. Estadísticas de Navegación</h4>
+        <p>Utilizamos servicios externos como <strong>GitHub Pages</strong> para el alojamiento y <strong>Hits (dwyl)</strong> para el conteo de visitas. Estos servicios pueden recopilar datos técnicos anónimos como su dirección IP (de forma agregada), tipo de navegador y páginas visitadas con el fin exclusivo de generar estadísticas de impacto académico.</p>
+        
+        <h3>Uso de la Información</h3>
+        <p>Cualquier dato recopilado de forma anónima se utiliza únicamente para:</p>
+        <ul>
+          <li>Medir el alcance y popularidad de los artículos.</li>
+          <li>Mejorar el diseño y la experiencia de usuario del blog.</li>
+          <li>Cumplir con objetivos de métricas académicas del proyecto.</li>
+        </ul>
+        
+        <h3>Derechos del Usuario</h3>
+        <p>Al ser un sitio estático alojado en GitHub, usted tiene derecho a navegar de forma totalmente anónima. No utilizamos cookies de seguimiento publicitario ni comercializamos ningún tipo de dato con terceros.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
