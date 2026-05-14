@@ -299,21 +299,24 @@
 
       <!-- REVIEWS SECTION -->
       <section class="reviews-section" id="resenas">
-        <h2>Comentarios Públicos</h2>
-        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
-          Únete a la discusión. Cualquier comentario que dejes aquí será visible para todos los compañeros que visiten la página.
-        </p>
+        <div class="reviews-header">
+          <h2>Comentarios Públicos</h2>
+          <p class="reviews-subtitle">
+            Únete a la discusión. Tu opinión es importante y cualquier comentario que dejes aquí será visible para todos los visitantes.
+          </p>
+        </div>
         
-        <div id="disqus_thread"></div>
+        <div class="disqus-container">
+          <div id="disqus_thread"></div>
+        </div>
         <script>
             var disqus_config = function () {
-                this.page.url = window.location.href.split('?')[0].split('#')[0]; 
+                this.page.url = 'https://erikanegretteg-web.github.io/E-Commerce/'; 
                 this.page.identifier = 'ecommerce-salud-erika'; 
             };
             (function() { // DON'T EDIT BELOW THIS LINE
             var d = document, s = d.createElement('script');
-            // IMPORTANTE: Este es el shortname de tu sitio en Disqus.
-            s.src = 'https://erikapaolanegrettegonzalez.disqus.com/embed.js';
+            s.src = 'https://e-commerce-web1.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
             })();
