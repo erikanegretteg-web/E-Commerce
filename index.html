@@ -299,41 +299,27 @@
 
       <!-- REVIEWS SECTION -->
       <section class="reviews-section" id="resenas">
-        <h2>Reseñas y Comentarios</h2>
-        <form class="review-form" onsubmit="submitReview(event)">
-          <div class="form-row">
-            <div>
-              <label for="revName">Tu nombre</label>
-              <input type="text" id="revName" placeholder="Escribe tu nombre..." required>
-            </div>
-            <div>
-              <label for="revArticle">Artículo</label>
-              <select id="revArticle">
-                <option>¿Moda Inofensiva o Riesgo de Salud?</option>
-                <option>El 90% de tu decisión está en los comentarios</option>
-                <option>¿Qué hace tu Smartwatch con tus datos?</option>
-                <option>El lado oculto del E-Commerce</option>
-                <option>El comercio electrónico tiene muchas formas</option>
-                <option>E Commerce and Health</option>
-                <option>¿Qué tan influenciable eres?</option>
-              </select>
-            </div>
-          </div>
-          <label>Calificación</label>
-          <div class="star-rating">
-            <span class="star" onclick="setRating(1)">★</span>
-            <span class="star" onclick="setRating(2)">★</span>
-            <span class="star" onclick="setRating(3)">★</span>
-            <span class="star" onclick="setRating(4)">★</span>
-            <span class="star" onclick="setRating(5)">★</span>
-          </div>
-          <label for="revText">Tu comentario</label>
-          <textarea id="revText" placeholder="Comparte tu opinión sobre el artículo..." required></textarea>
-          <button type="submit" class="review-submit">Publicar reseña</button>
-        </form>
-        <div class="reviews-list" id="reviewsList">
-          <!-- Reviews go here -->
-        </div>
+        <h2>Comentarios Públicos</h2>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+          Únete a la discusión. Cualquier comentario que dejes aquí será visible para todos los compañeros que visiten la página.
+        </p>
+        
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = window.location.href.split('?')[0].split('#')[0]; 
+                this.page.identifier = 'ecommerce-salud-erika'; 
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            // IMPORTANTE: Este es un shortname de prueba. Para tener tu propio panel, 
+            // crea tu cuenta en disqus.com y cambia 'test-disqus' por tu shortname.
+            s.src = 'https://test-disqus.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Por favor activa JavaScript para ver los <a href="https://disqus.com/?ref_noscript">comentarios impulsados por Disqus.</a></noscript>
       </section>
 
     </div>
@@ -379,7 +365,12 @@
       <div class="sidebar-widget">
         <h2>Comentarios Recientes</h2>
         <div id="sidebarRecentReviews">
-          <!-- Dynamically filled -->
+          <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.5;">
+            Los comentarios ahora son públicos y potenciados por Disqus. Baja al final de la página para unirte a la conversación.
+          </p>
+          <button class="support-btn" style="margin-top: 10px; font-size: 0.8rem; padding: 0.5rem;" onclick="document.getElementById('resenas').scrollIntoView({behavior:'smooth'})">
+            Ver Comentarios
+          </button>
         </div>
       </div>
 

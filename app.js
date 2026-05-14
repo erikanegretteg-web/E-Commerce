@@ -190,74 +190,8 @@ searchInput.addEventListener('input', (e) => {
   });
 });
 
-// ===== REVIEWS =====
-let reviewRating = 0;
-function setRating(n) {
-  reviewRating = n;
-  document.querySelectorAll('.star-rating .star').forEach((s, i) => {
-    s.classList.toggle('active', i < n);
-  });
-}
-
-function loadReviews() {
-  const reviews = JSON.parse(localStorage.getItem('blog_reviews') || '[]');
-  
-  // Update main list
-  const list = document.getElementById('reviewsList');
-  if (list) {
-    if (!reviews.length) { 
-      list.innerHTML = '<p class="no-reviews">Aún no hay reseñas. ¡Sé el primero en comentar!</p>'; 
-    } else {
-      list.innerHTML = reviews.map(r => `
-        <div class="review-card">
-          <div class="review-card-header">
-            <span class="review-author">${r.name}<span class="review-article-tag">${r.article}</span></span>
-            <span class="review-stars">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</span>
-          </div>
-          <div class="review-text">${r.text}</div>
-          <div class="review-date">${r.date}</div>
-        </div>`).join('');
-    }
-  }
-
-  // Update sidebar widget
-  const sidebarList = document.getElementById('sidebarRecentReviews');
-  if (sidebarList) {
-    if (!reviews.length) {
-      sidebarList.innerHTML = '<p style="font-size:0.8rem;color:var(--text-muted)">No hay comentarios recientes.</p>';
-    } else {
-      sidebarList.innerHTML = reviews.slice(0, 3).map(r => `
-        <div class="sidebar-review-item">
-          <div class="sidebar-review-meta">
-            <span>${r.name}</span>
-            <span class="sidebar-review-stars">${'★'.repeat(r.rating)}</span>
-          </div>
-          <div style="font-style:italic;color:var(--text-muted)">"${r.text.substring(0, 40)}..."</div>
-        </div>`).join('');
-    }
-  }
-}
-
-function submitReview(e) {
-  e.preventDefault();
-  const name = document.getElementById('revName').value.trim();
-  const article = document.getElementById('revArticle').value;
-  const text = document.getElementById('revText').value.trim();
-  if (!name || !text || !reviewRating) { alert('Por favor completa todos los campos y selecciona una calificación.'); return; }
-  
-  const reviews = JSON.parse(localStorage.getItem('blog_reviews') || '[]');
-  reviews.unshift({ 
-    name, article, text, rating: reviewRating, 
-    date: new Date().toLocaleDateString('es-CO', { year:'numeric', month:'long', day:'numeric' }) 
-  });
-  
-  localStorage.setItem('blog_reviews', JSON.stringify(reviews));
-  document.getElementById('revName').value = '';
-  document.getElementById('revText').value = '';
-  reviewRating = 0;
-  document.querySelectorAll('.star-rating .star').forEach(s => s.classList.remove('active'));
-  loadReviews();
-}
+// ===== REVIEWS (Migrated to Disqus) =====
+// The review system is now handled via the Disqus embed in index.html.
 
 // ===== SHARE =====
 function share(platform) {
@@ -381,6 +315,6 @@ function initViewCounters() {
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
   initQuiz();
-  loadReviews();
+  // loadReviews(); -> Removed (using Disqus)
   initViewCounters();
 });
